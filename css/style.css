@@ -1,0 +1,232 @@
+@charset "utf8";
+
+@font-face {
+    font-family: 'MICEGothic Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+html{scroll-behavior: smooth;}
+        a{color: inherit; text-decoration: none;}
+        h1{font-size: 2em; font-weight:bold} 
+        h2{font-size: 1.875em; font-weight:bold}
+        h3{font-size: 1.25em; font-weight: bold;}
+        body{background-color: #2B2E4A;color: #E84545;font-family: 'MICEGothic Bold';
+        }
+        li{list-style: none;text-decoration: none;}
+        /* 메뉴시작 */
+        #logo{width: 100%;float: left;padding-top: 30px;padding-left: 95px;box-sizing: border-box;}
+        #gnb .gnb_wrap{position: fixed;top:  0px;left: calc(50% + 700px);width: 300px;height: 300px;;background-color:rgba(0, 0, 0, .8);border-radius: 0 0 0 100px;}
+        #gnb1{position: relative;width: 95%;display: inline-block;box-sizing: border-box;}
+        #gnb li{text-align: center;font-size: 20px;line-height: 1.8;}
+        /* 메뉴종료 */
+        #textbox1 p{position: absolute;font-size: 80px;z-index: 99999;}
+        #textbox1 p:nth-of-type(1){top: 450px;left: 35px;color: rgba(0, 0, 0, .6);}
+        #textbox1 p:nth-of-type(2){top: 350px;left: 923px;color: rgba(255, 255, 255, .6);}
+
+        /* 메인비쥬얼시작 */
+        #wrap{position: relative;;width: 1200px;height: 800px;;/* border: 1px solid red */;margin: 0 auto;padding-top: 100px;}
+        #video_box{position: relative;width: 70%;border-radius: 0 150px  0 150px;margin: 0 auto;box-sizing: border-box;overflow: hidden;margin-bottom: 150px;margin-top: 100px;}
+        #video_box video{width: 100%;box-sizing: border-box;}
+        #hiddentext{color: black;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);text-align: center;font-size: 60px;display: none;}
+        #hiddentext span{color: red;}
+        #toptext {color: #393E46;position: absolute;top: 5%;left: 5%;font-size: 60px;opacity: 0;animation: maintext 2s forwards;}
+        #middletext {color: #393E46;position: absolute;top: 20%;left: 5%;font-size: 60px;opacity: 0;animation: maintext 2s 2s forwards;}
+        #bottomtext{color: black;position: absolute; top: 35%;left: 5%; font-size: 30px;}
+        #bottomtext span{color: red;}
+        @keyframes maintext {0% {}100% {opacity: 1;}}
+        #main_visual #textbox2{text-align: center;margin-bottom: 30px;}
+        #main_visual #textbox2 p:nth-of-type(1){font-size: 24px;line-height: 1.5;color: white;}
+        #main_visual #textbox2 p:nth-of-type(2){color: #E84545;}
+        /* 메인비쥬얼 종료 */
+        /* 스틱키존 시작 */
+        #stickyzone #wrap{position: relative;;height:2000px;border: 1px solid pink;border-radius: 30px;margin-bottom: 100px;padding-top: 0;box-sizing: border-box;}
+        /* left_wrap */
+        #stickyzone #wrap #left_wrap{position: relative;height: 2000px;/* border: 1px solid red; */ box-sizing: border-box;width: 50%;;float: left;}
+
+        /* leftbox1 */
+        #stickyzone #wrap #left_wrap1{position: relative;height: 1000px;/* border: 1px solid red; */ box-sizing: border-box;width: 100%;;float: left;}
+        #stickyzone #wrap #leftbox1{position: sticky;top: 23%;left: 0;width: 100%;height: 500px;/* ;border: 1px solid blue */;float: left;box-sizing: border-box;border-radius: 5px;}
+        #stickyzone #wrap #leftbox1 #recommended{position: absolute;width: 75px;height: 75px;top: 20px;right: 20px;overflow: hidden;}
+        #stickyzone #wrap #leftbox1 #recommended img{width: 100%;}
+        #stickyzone #wrap #leftbox1 .left1 img{padding: 80px 25px 0 25px;float: left;}
+        #stickyzone #wrap #leftbox1 .left2{padding: 120px 0 0 0;float: left;line-height: 1.5;}
+        #stickyzone #wrap #leftbox1 .left2 p:nth-of-type(1){font-size: 30px;color: white;}
+        #stickyzone #wrap #leftbox1 .left2 ul{font-size: 14px;color: #393E46;background-color: wheat;border-radius: 5px;margin: 5px 0 7px 0;padding-left: 5px;overflow: hidden;}
+        #stickyzone #wrap #leftbox1 .left2 ul li{float: left;padding-right: 5px;}
+        #stickyzone #wrap #leftbox1 .left2 ul >span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:5px 5px 0 0;}
+        #stickyzone #wrap #leftbox1 .left2 p:nth-of-type(2){font-size: 16px;color: white;}
+        #stickyzone #wrap #leftbox1 .left2 p:nth-of-type(2)>span{font-size: 20px;color: red;}
+        #stickyzone #wrap #leftbox1 .left2 p:nth-of-type(3){font-size: 16px;color: white;}
+        #stickyzone #wrap #leftbox1 .left2 div{width: 150px; height: 40px;background-color: red;border-radius: 5px;color: white;font-size: 18px;font-weight: 100;text-align: center;padding-top: 10px;margin: 0 auto;cursor: pointer;}
+
+        /* leftbox2 */
+
+        #stickyzone #wrap #left_wrap2{position: relative;;height: 1000px;/* border: 1px solid red; */ box-sizing: border-box;width: 100%;float: left;}
+        #stickyzone #wrap #leftbox2{position: sticky;top: 23%;left: 0;width: 100%;height: 500px;;/* border: 1px solid blue */;float: left;box-sizing: border-box;border-radius: 5px}
+        #stickyzone #wrap #leftbox2 #recommended{position: absolute;width: 75px;height: 75px;top: 20px;right: 20px;overflow: hidden;}
+        #stickyzone #wrap #leftbox2 #recommended img{width: 100%;}
+        #stickyzone #wrap #leftbox2 .left3 img{padding: 80px 25px 0 5px;float: left;}
+        #stickyzone #wrap #leftbox2 .left4{padding: 120px 0 0 0;float: left;line-height: 1.5;}
+        #stickyzone #wrap #leftbox2 .left4 p:nth-of-type(1){font-size: 30px;color: white;}
+        #stickyzone #wrap #leftbox2 .left4 ul{font-size: 14px;color: #393E46;background-color: wheat;border-radius: 5px;margin: 5px 0 7px 0;padding-left: 5px;overflow: hidden;}
+        #stickyzone #wrap #leftbox2 .left4 ul li{float: left;padding-right: 5px;}
+        #stickyzone #wrap #leftbox2 .left4 ul >span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:5px 5px 0 0;}
+        #stickyzone #wrap #leftbox2 .left4 p:nth-of-type(2){font-size: 16px;color: white;}
+        #stickyzone #wrap #leftbox2 .left4 p:nth-of-type(2)>span{font-size: 20px;color: red;}
+        #stickyzone #wrap #leftbox2 .left4 p:nth-of-type(3){font-size: 16px;color: white;}
+        #stickyzone #wrap #leftbox2 .left4 div{width: 150px; height: 40px;background-color: red;border-radius: 5px;color: white;font-size: 18px;font-weight: 100;text-align: center;padding-top: 10px;margin: 0 auto;cursor: pointer;}
+
+        /* 우  */
+        #stickyzone #wrap #right{width: 50%;height: 2000px;;/* border: 1px solid green */;float: left;box-sizing: border-box;cursor: pointer;}
+        /* 우 1 */
+        
+        #stickyzone #wrap #rightbox1{height: 500px;/* border: 1px solid yellow */;box-sizing: border-box;border-radius: 5px}
+        #stickyzone #wrap #rightbox1 #discount1{position: absolute;width: 75px;height: 75px;top: 120px;right: 60px;overflow: hidden;}
+        #stickyzone #wrap #rightbox1 #discount1 img{width: 100%;}
+        #stickyzone #wrap #rightbox1 .right1 img{padding: 80px 25px 0 25px;float: left;}
+        #stickyzone #wrap #rightbox1 .right2{padding: 120px 0 0 0;float: left;line-height: 1.5;}
+        #stickyzone #wrap #rightbox1 .right2 p:nth-of-type(1){font-size: 30px;color: white;}
+        #stickyzone #wrap #rightbox1 .right2 ul{font-size: 14px;color: #393E46;background-color: wheat;border-radius: 5px;margin: 5px 0 7px 0;padding-left: 5px;overflow: hidden;}
+        #stickyzone #wrap #rightbox1 .right2 ul li{float: left;padding-right: 5px;}
+        #stickyzone #wrap #rightbox1 .right2 ul >span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:5px 5px 0 0;}
+        #stickyzone #wrap #rightbox1 .right2 p:nth-of-type(2){font-size: 16px;color: white;}
+        #stickyzone #wrap #rightbox1 .right2 p:nth-of-type(2)>span{font-size: 20px;color: red;}
+        #stickyzone #wrap #rightbox1 .right2 p:nth-of-type(3){font-size: 16px;color: white;}
+        #stickyzone #wrap #rightbox1 .right2 p:nth-of-type(4){margin-top: 60px;font-size: 22px;color: white;}
+
+
+        /* 우2 */
+        #stickyzone #wrap #rightbox2{width: 50%;;height: 500px;/* border: 1px solid yellow; */float: left;box-sizing: border-box;border-radius: 5px}
+        #stickyzone #wrap #rightbox2 .right3 img{padding: 30px 0 0 45px;float: left;width: 70%;}
+        #stickyzone #wrap #rightbox2 .right4{padding: 0 0 0 15px;float: left;line-height: 1.5;text-align: center;}
+        #stickyzone #wrap #rightbox2 .right4 p:nth-of-type(1){font-size: 30px;color: white;}
+        #stickyzone #wrap #rightbox2 .right4 ul{font-size: 14px;color: #393E46;background-color: wheat;border-radius: 5px;margin: 5px 0 7px 0;padding-left: 5px;overflow: hidden;}
+        #stickyzone #wrap #rightbox2 .right4 ul li{float: left;padding-right: 5px;}
+        #stickyzone #wrap #rightbox2 .right4 ul >span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:5px 5px 0 0;}
+        #stickyzone #wrap #rightbox2 .right4 p:nth-of-type(2){font-size: 16px;color: white;}
+        #stickyzone #wrap #rightbox2 .right4 p:nth-of-type(2)>span{font-size: 20px;color: red;}
+        #stickyzone #wrap #rightbox2 .right4 p:nth-of-type(3){font-size: 16px;color: white;}
+        /* 우3 */
+        #stickyzone #wrap #rightbox3{width: 50%;height: 500px;box-sizing: border-box;/* border: 1px solid yellow */;float: left;border-radius: 5px}
+        #stickyzone #wrap #rightbox3 .right5 img{padding: 30px 0 0 45px;float: left;width: 70%;}
+        #stickyzone #wrap #rightbox3 .right6{padding: 0 0 0 15px;float: left;line-height: 1.5;text-align: center;}
+        #stickyzone #wrap #rightbox3 .right6 p:nth-of-type(1){font-size: 30px;color: white;}
+        #stickyzone #wrap #rightbox3 .right6 ul{font-size: 14px;color: #393E46;background-color: wheat;border-radius: 5px;margin: 5px 0 7px 0;padding-left: 5px;overflow: hidden;}
+        #stickyzone #wrap #rightbox3 .right6 ul li{float: left;padding-right: 5px;}
+        #stickyzone #wrap #rightbox3 .right6 ul >span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:5px 5px 0 0;}
+        #stickyzone #wrap #rightbox3 .right6 p:nth-of-type(2){font-size: 16px;color: white;}
+        #stickyzone #wrap #rightbox3 .right6 p:nth-of-type(2)>span{font-size: 20px;color: red;}
+        #stickyzone #wrap #rightbox3 .right6 p:nth-of-type(3){font-size: 16px;color: white;}
+
+        /* 우4 */
+        #stickyzone #wrap #rightbox4{position: relative;clear: both;;height: 500px;/* border: 1px solid red; */box-sizing: border-box;}
+        #stickyzone #wrap #rightbox4 #discount2{position: absolute;width: 75px;height: 75px;top: 120px;right: 40px;}
+        #stickyzone #wrap #rightbox4 #discount2 img{width: 100%;}
+        #stickyzone #wrap #rightbox4 .right9 img{padding: 80px 25px 0 5px;float: left;}
+        #stickyzone #wrap #rightbox4 .right10{padding: 120px 0 0 0;float: left;line-height: 1.5;}
+        #stickyzone #wrap #rightbox4 .right10 p:nth-of-type(1){font-size: 30px;color: white;}
+        #stickyzone #wrap #rightbox4 .right10 ul{font-size: 14px;color: #393E46;background-color: wheat;border-radius: 5px;margin: 5px 0 7px 0;padding-left: 5px;overflow: hidden;}
+        #stickyzone #wrap #rightbox4 .right10 ul li{float: left;padding-right: 5px;}
+        #stickyzone #wrap #rightbox4 .right10 ul >span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:5px 5px 0 0;}
+        #stickyzone #wrap #rightbox4 .right10 p:nth-of-type(2){font-size: 16px;color: white;}
+        #stickyzone #wrap #rightbox4 .right10 p:nth-of-type(2)>span{font-size: 20px;color: red;}
+        #stickyzone #wrap #rightbox4 .right10 p:nth-of-type(3){font-size: 16px;color: white;}
+        #stickyzone #wrap #rightbox4 .right10 p:nth-of-type(4){margin-top: 60px;font-size: 22px;color: white;}
+        /* 우5 */
+        #stickyzone #wrap #rightbox5{width: 50%;height: 500px;box-sizing: border-box;/* border: 1px solid yellow */;float: left;}
+        #stickyzone #wrap #rightbox5 .right11 img{padding: 30px 0 0 60px;float: left;width: 60%;overflow: hidden;}
+        #stickyzone #wrap #rightbox5 .right12{padding: 0 0 0 15px;float: left;line-height: 1.5;text-align: center;}
+        #stickyzone #wrap #rightbox5 .right12 p:nth-of-type(1){font-size: 30px;color: white;}
+        #stickyzone #wrap #rightbox5 .right12 ul{font-size: 14px;color: #393E46;background-color: wheat;border-radius: 5px;margin: 5px 0 7px 0;padding-left: 5px;overflow: hidden;}
+        #stickyzone #wrap #rightbox5 .right12 ul li{float: left;padding-right: 5px;}
+        #stickyzone #wrap #rightbox5 .right12 ul >span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:5px 5px 0 0;}
+        #stickyzone #wrap #rightbox5 .right12 p:nth-of-type(2){font-size: 16px;color: white;}
+        #stickyzone #wrap #rightbox5 .right12 p:nth-of-type(2)>span{font-size: 20px;color: red;}
+        #stickyzone #wrap #rightbox5 .right12 p:nth-of-type(3){font-size: 16px;color: white;}
+        /* 우6 */
+        #stickyzone #wrap #rightbox6{width: 50%;height: 500px;box-sizing: border-box;/* border: 1px solid yellow */;float: left;}
+        #stickyzone #wrap #rightbox6 .right13 img{padding: 35px 0 5px 55px;float: left;width: 60%;overflow: hidden;}
+        #stickyzone #wrap #rightbox6 .right14{padding: 0 0 0 10px;float: left;line-height: 1.5;text-align: center;}
+        #stickyzone #wrap #rightbox6 .right14 p:nth-of-type(1){font-size: 30px;color: white;}
+        #stickyzone #wrap #rightbox6 .right14 ul{font-size: 14px;color: #393E46;background-color: wheat;border-radius: 5px;margin: 5px 0 7px 0;padding-left: 5px;overflow: hidden;}
+        #stickyzone #wrap #rightbox6 .right14 ul li{float: left;padding-right: 5px;}
+        #stickyzone #wrap #rightbox6 .right14 ul >span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:5px 5px 0 0;}
+        #stickyzone #wrap #rightbox6 .right14 p:nth-of-type(2){font-size: 16px;color: white;}
+        #stickyzone #wrap #rightbox6 .right14 p:nth-of-type(2)>span{font-size: 20px;color: red;}
+        #stickyzone #wrap #rightbox6 .right14 p:nth-of-type(3){font-size: 16px;color: white;}
+        /* info시작 */
+        #info{background-color: white;}
+        #info #textbox3{font-size: 24px;color: black;text-align: center;margin-bottom: 20px;}
+        #info #wrap{text-align: center;}
+        #info #wrap label{color: white;padding: 5px;width: 1200px;cursor: pointer;}
+        #info #wrap > ul{overflow: hidden;position: absolute;left: 50%;transform: translateX(-50%);}
+        #info #wrap ul li{float: left;}
+        /* 체크박스 시작 */
+        #check1 {display: none;}
+        .menubar1{display: none;width: 1200px;margin-top: 60px;}
+         #check2 {display: none;}
+        .menubar2{display: none;width: 1200px;margin-top: 60px;}
+        label p{width: 100px;;float: left;position: absolute;;}
+        label:nth-of-type(1) p{width: 120px;height: 30px;padding-top: 12px;color: black;left: 475px;top: 150px;}
+        label:nth-of-type(2) p{width: 120px;height: 30px;padding-top: 12px;color: black;left: 600px;top: 150px;}
+        input:nth-of-type(1):checked ~ label:nth-of-type(1) p {background-color: red;color: white;border-radius: 10px 0 0 0;}
+        input:nth-of-type(2):checked ~ label:nth-of-type(2) p:nth-of-type(1){background-color: black;color:red;border-radius: 0 10px 0 0;}
+        input:nth-of-type(2):checked ~ label:nth-of-type(2) p {background-color: red;color: black;}
+        #check1:checked ~ .menubar1 {display: block;}
+        #check2:checked ~ .menubar2 {display: block;}
+        /* 체크박스 종료 */
+
+        /* 메뉴바1 시작 */
+        #info #wrap .menubar1 > li{width: 22%;height: 500px;background-color: white;border: 1px solid gray;box-shadow: 2px 2px 2px 0 inset gray;box-sizing: border-box;margin-right: 48px;border-radius: 5px;overflow: hidden}
+        #info #wrap .menubar1 li:hover >div{transform: scale(103%);cursor: pointer;transition: .4s;}
+        #info #wrap .menubar1 li div >span{width: 220px;height: 2px;background-color: gray;display: block;margin: 10px auto -10px;}
+        #info #wrap .menubar1 li p{line-height: 1.5;}
+        #info #wrap .menubar1 li p:nth-of-type(1){color: black;font-size: 20px;;}
+        #info #wrap .menubar1 li p:nth-of-type(2){color: gray;font-size: 14px;;}
+        #info #wrap .menubar1 li p:nth-of-type(3){color: red;font-size: 20px;;}
+        #info #wrap .menubar1 li p:nth-of-type(4){color: red;font-size: 24px;padding-top: 28px;}
+        #info #wrap .menubar1 li div{width: 100%;}
+        #info #wrap .menubar1 ul{display: flex;justify-content: center;align-items: center;font-size: 12px;color: white;background-color: black;overflow: hidden;width: 100%;height: 30px;;text-align: center;}
+        #info #wrap .menubar1 ul span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:2px 5px 2px 5px;}
+        #info #wrap .menubar1 >li:last-of-type{margin-right: 0px;}
+        #info #wrap .menubar1 >li img{width: 100%;padding-top: 30px;}
+        /* 메뉴바1 종료 */
+        /* 메뉴바2 시작 */
+        #info #wrap .menubar2 > li{width: 22%;height: 500px;background-color: white;border: 1px solid gray;box-shadow: 2px 2px 2px 0 inset gray;box-sizing: border-box;margin-right: 48px;border-radius: 5px;overflow: hidden}
+        #info #wrap .menubar2 li:hover >div{transform: scale(103%);cursor: pointer;transition: .4s;}
+        #info #wrap .menubar2 li div >span{width: 220px;height: 2px;background-color: gray;display: block;margin: 10px auto -10px;}
+        #info #wrap .menubar2 li p{line-height: 1.5;}
+        #info #wrap .menubar2 li p:nth-of-type(1){color: black;font-size: 20px;;}
+        #info #wrap .menubar2 li p:nth-of-type(2){color: gray;font-size: 14px;;}
+        #info #wrap .menubar2 li p:nth-of-type(3){color: red;font-size: 20px;;}
+        #info #wrap .menubar2 li p:nth-of-type(4){color: red;font-size: 24px;padding-top: 28px;}
+        #info #wrap .menubar2 li div{width: 100%;}
+        #info #wrap .menubar2 ul{display: flex;justify-content: center;align-items: center;font-size: 12px;color: white;background-color: black;overflow: hidden;width: 100%;height: 30px;;text-align: center;}
+        #info #wrap .menubar2 ul span{width: 2px;height: 15px;background-color: gray;display: block;float: left;margin:2px 5px 2px 5px;}
+        #info #wrap .menubar2 >li:last-of-type{margin-right: 0px;}
+        #info #wrap .menubar2 >li img{width: 100%;padding-top: 30px;}
+        /* 메뉴바2 종료 */
+
+        #main_visual .bxslider >li img{width: 1400px;height: 335px;}
+
+        /* footer시작 */
+        /* 푸터시작 */
+        footer{width: 100%;background-color: black;line-height: 1.5;} 
+        footer span{display: block;background-color: gray;width: 2px;height: 250px;float: left;}
+        footer #wrap{display: flex;position: relative;height: 350px;margin: 0 auto; padding: 0;flex-wrap: nowrap;justify-content: space-between;align-items: center;}
+        footer #wrap>div{width: 400px;height: 260px;}
+        /* 푸터1 */
+        #footer1 p:nth-of-type(1){text-align: center;font-size: 20px;color: white;margin-top: 40px;margin-left: 0;}
+        #footer1 p{margin-left: 45px;color: gray;}
+        #footer1 p:nth-of-type(6){line-height: .8;margin-left: 130px;color: gray;}
+        /* 푸터2 */
+        #footer2 p:nth-of-type(1){text-align: center;font-size: 20px;color: white;margin-top: 40px;}
+        #footer2 p{color: gray;text-align: center;font-size: 18px;}
+
+        /* 푸터3 */
+        #footer3 p:nth-of-type(1){text-align: center;font-size: 20px;color: white;margin-top: 40px;margin-left: 0;}
+        #footer3 p:nth-of-type(2){text-align: center;font-size: 52px;color: red;margin-left: 0;}
+        #footer3 p{margin-left: 120px;color: gray;}
+        #footer3 p:nth-of-type(5){letter-spacing: -.3px;}
+        /* footer 종료 */
